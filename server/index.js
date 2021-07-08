@@ -1,5 +1,5 @@
 const express = require('express');
-const keys = require('./config.js')
+const keys = require('../config.js')
 const app = express();
 const port = 3000;
 const path = require('path');
