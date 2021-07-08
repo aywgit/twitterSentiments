@@ -1,5 +1,5 @@
 const express = require('express');
-
+const keys = require('./config.js')
 const app = express();
 const port = 3000;
 const path = require('path');
@@ -10,8 +10,8 @@ const Twitter = require('twitter-lite');
 var Sentiment = require('sentiment');
 
 const user = new Twitter({
-  consumer_key: "LzdvPTVqQX9vwRZv5Q4mupaPO",
-  consumer_secret: "CstESpAikCJTozIKcLfwKjYI58iufXTgIkrzOgXbqqDS58yBA2",
+  consumer_key: keys.consumer_key,
+  consumer_secret: keys.consumer_secret,
 });
 
 searchForTweets("lionel messi");

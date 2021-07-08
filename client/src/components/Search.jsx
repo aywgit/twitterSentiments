@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import a from '../search.js'
 
 class Search extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Search extends React.Component {
   handleSubmit(event) {
     alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
-    searchForTweets(this.state.value)
+    a(this.state.value)
   }
   render() {
     return (
