@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import a from '../search.js'
 
 class Search extends React.Component {
   constructor(props) {
